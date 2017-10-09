@@ -1,6 +1,6 @@
 Package: NeuRRoStat
 Type: Package
-Title: Inhouse R functions used at the NeuroStat lab (Ghent University)
+Title: A rare collection of R functions used at the NeuroStat lab (Ghent University)
 Version: 0.1.0
 Author: Han Bossier
 Maintainer: Han Bossier <Han.Bossier@Ugent.be>
