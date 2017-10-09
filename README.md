@@ -12,7 +12,12 @@ To install the package directly from Github, one needs to have *devtools* instal
 library(devtools)
 ```
 
-If not installed, run:
+Make sure, you have version **1.1.3.** of *devtools* installed. To check, run:
+```{r}
+packageVersion("devtools")
+```
+
+If not updated/installed, run:
 ```{r}
 install.packages('devtools')
 ```
