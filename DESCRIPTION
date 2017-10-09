@@ -14,8 +14,6 @@ LazyData: true
 Imports:
     dplyr,
     neuRosim,
-    stats,
-    rnorm,
-    var
+    stats
 RoxygenNote: 6.0.1
 Suggests: testthat
