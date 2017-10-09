@@ -1,11 +1,17 @@
 Package: NeuRRoStat
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Inhouse R functions used at the NeuroStat lab (Ghent University).
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Han Bossier
+Maintainer: Han Bossier <Han.Bossier@Ugent.be>
+Description: This package contains several functions related to neuroimaging.
+  These are routinely used in simulations/analyses.
+License: MIT + LICENSE
+URL: https://github.com/NeuroStat/NeuRRoStat
+BugReports: https://github.com/NeuroStat/NeuRRoStat/issues
 Encoding: UTF-8
 LazyData: true
+Imports:
+    dplyr,
+    neuRosim
+RoxygenNote: 6.0.1
