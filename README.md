@@ -1,4 +1,7 @@
 # NeuRRoStat
+
+[![Build Status](https://travis-ci.org/HBossier/NeuRRoStat.svg?branch=master)](https://travis-ci.org/HBossier/NeuRRoStat)
+
 As an *R master* once said:
 > \[...]: anything that can be automated, should be automated. Do as little as possible by hand. Do as much as possible with functions. \[Hadley Wickham]
 

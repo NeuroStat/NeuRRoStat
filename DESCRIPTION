@@ -6,15 +6,14 @@ Author: Han Bossier
 Maintainer: Han Bossier <Han.Bossier@Ugent.be>
 Description: This package contains several functions related to neuroimaging.
   These are routinely used in simulations/analyses.
-License: MIT + LICENSE
+License: MIT + file LICENSE
 URL: https://github.com/NeuroStat/NeuRRoStat
 BugReports: https://github.com/NeuroStat/NeuRRoStat/issues
 Encoding: UTF-8
 LazyData: true
 Imports:
     dplyr,
-    neuRosim
-Suggests:
+    neuRosim,
     stats,
     rnorm,
     var
