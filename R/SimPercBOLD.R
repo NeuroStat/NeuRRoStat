@@ -12,6 +12,7 @@
 #' @param ... extra arguments passed to or from other methods.
 #'
 #' @return a list with a vector with the simulated time series, the signal, the design matrix
+#' @export
 SimPercBOLD <- function(percBOLD, designRange, nscan, sigmaNoise){
   # Test for presence of neuRosim
   if(requireNamespace('neuRosim', quietly = TRUE) == FALSE) stop('Function requires neuRosim')
