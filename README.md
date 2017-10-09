@@ -7,7 +7,20 @@ This package is an ongoing effort/development to gather subroutines (i.e. functi
   * work more efficiently
 
 # Requirements
-*devtools*
+To install the package directly from Github, one needs to have *devtools* installed. In **R** run:
+```{r}
+library(devtools)
+```
+
+If not installed, run:
+```{r}
+install.packages('devtools')
+```
 
 # Install the package
-devtools::install_github("NeuroStat/NeuRRoStat")
+
+To install the stable branch, run:
+```{r}
+devtools::install_github("NeuroStat/NeuRRoStat", ref = "master")
+```
+
