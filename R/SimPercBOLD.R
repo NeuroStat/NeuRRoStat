@@ -5,14 +5,13 @@
 #' Then it specifies the range of the design matrix and sigma for white noise.
 #' It can be used to run quick simulations.
 #'
-#' @param percBOLD a number ( in %) providing the true percent change of BOLD change.
+#' @param percBOLD a number (in percentage) providing the true percent change of BOLD change.
 #' @param designRange a vector with the min and max of the design.
 #' @param nscan a number providing the number of scans
 #' @param sigmaNoise a single number representing sigma of white noise
 #' @param ... extra arguments passed to or from other methods.
 #'
 #' @return a list with a vector with the simulated time series, the signal, the design matrix
-#' @export
 SimPercBOLD <- function(percBOLD, designRange, nscan, sigmaNoise){
   # Test for presence of neuRosim
   if(requireNamespace('neuRosim', quietly = TRUE) == FALSE) stop('Function requires neuRosim')
