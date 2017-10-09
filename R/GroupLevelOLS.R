@@ -9,6 +9,7 @@
 #' @param ... extra arguments passed to or from other methods.
 #'
 #' @return a vector with the estimated group level parameter
+#' @export
 GroupLevelOLS <- function(N, subj_b1){
   # Check class of beta 1 parameters
   if(!class(subj_b1) %in% c('vector', 'numeric')) stop("subj_b1 should be a vector.")

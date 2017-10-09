@@ -6,6 +6,7 @@
 #'
 #' @param N sample size in this study
 #' @return A positive integer J
+#' @export
 corrJ <- function(N){
   1-(3/((4*(N-1))-1))
 }
@@ -21,6 +22,7 @@ corrJ <- function(N){
 #' @seealso \code{\link{corrJ}} for the function of the correction factor J.
 #'
 #' @return Hedges' g.
+#' @export
 hedgeG <- function(t,N){
   G <- (t/sqrt(N))*corrJ(N)
   return(G)
@@ -36,6 +38,7 @@ hedgeG <- function(t,N){
 #' @param N sample size
 #'
 #' @return var(g)
+#' @export
 varHedge <- function(g,N){
   value <- (1/N) + (1 - (gamma((N - 2) / 2) / gamma((N - 1) / 2))^2 * (N - 3) / 2) * g^2
   return(round(value,7))
@@ -56,6 +59,7 @@ varHedge <- function(g,N){
 #' @references \url{https://www.ncbi.nlm.nih.gov/pubmed/3802833}
 #'
 #' @return an estimate for between-study variance.
+#' @export
 tau <- function(Y,W,k){
   C <- sum(W)-(sum(W^2)/sum(W))
   df <- k-1
@@ -76,6 +80,7 @@ tau <- function(Y,W,k){
 #' @param W the weights (of length Y or 1) to use in the weighted average
 #'
 #' @return the weighed average
+#' @export
 wMean <- function(Y,W){
   if((length(W) != 1) & (length(W) != length(Y))){
     stop('Vector of weights should be of length Y or 1')

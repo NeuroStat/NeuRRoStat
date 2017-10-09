@@ -1,6 +1,6 @@
 Package: NeuRRoStat
 Type: Package
-Title: Inhouse R functions used at the NeuroStat lab (Ghent University).
+Title: Inhouse R functions used at the NeuroStat lab (Ghent University)
 Version: 0.1.0
 Author: Han Bossier
 Maintainer: Han Bossier <Han.Bossier@Ugent.be>
@@ -14,4 +14,8 @@ LazyData: true
 Imports:
     dplyr,
     neuRosim
+Suggests:
+    stats,
+    rnorm,
+    var
 RoxygenNote: 6.0.1
