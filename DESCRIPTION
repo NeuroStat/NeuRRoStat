@@ -1,22 +1,19 @@
 Package: NeuRRoStat
 Type: Package
-Title: Inhouse R functions used at the NeuroStat lab (Ghent University)
+Title: A rare collection of R functions used at the NeuroStat lab (Ghent University)
 Version: 0.1.0
 Author: Han Bossier
 Maintainer: Han Bossier <Han.Bossier@Ugent.be>
 Description: This package contains several functions related to neuroimaging.
   These are routinely used in simulations/analyses.
-License: MIT + LICENSE
+License: MIT + file LICENSE
 URL: https://github.com/NeuroStat/NeuRRoStat
 BugReports: https://github.com/NeuroStat/NeuRRoStat/issues
 Encoding: UTF-8
 LazyData: true
 Imports:
     dplyr,
-    neuRosim
-Suggests:
-    stats,
-    rnorm,
-    var
+    neuRosim,
+    stats
 RoxygenNote: 6.0.1
 Suggests: testthat
