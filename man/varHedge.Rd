@@ -12,10 +12,15 @@ varHedge(g, N)
 \item{N}{sample size}
 }
 \value{
-var(g)
+The estimate of the within-study variability of Hedges g.
 }
 \description{
 Function to calculate the within-study variance of one sample
-effect size g using calculations from Hedges (1989).
+effect size g using the formula from Radua.
 Input is the standardized effect size g and N.
+}
+\seealso{
+\code{\link{varHedgeT}} for the function of the variance based on
+the non-central t-distribution from which we know the derivations.
+We do not know the derivations for the current expression from Radua.
 }

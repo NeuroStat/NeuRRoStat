@@ -4,20 +4,24 @@
 \alias{hedgeG}
 \title{Calculate Hedges' g from one sample t-test statistic.}
 \usage{
-hedgeG(t, N)
+hedgeG(t, N, type = c("approx", "exact"))
 }
 \arguments{
-\item{t}{t test-statistic from a one-sample t-test}
+\item{t}{T test-statistic from a one-sample t-test}
 
-\item{N}{sample size.}
+\item{N}{Sample size.}
+
+\item{type}{Use the approximation for the unbiased estimator (default)
+or the exact expression.}
 }
 \value{
-Hedges' g.
+Standardized mean effect size Hedges' g.
 }
 \description{
 This function takes the t test-statistic from a \strong{one-sample t-test}
 and calculates Hedges' g.
 }
-\seealso{
-\code{\link{corrJ}} for the function of the correction factor J.
+\details{
+The approximation is based on the correction factor \code{\link{corrJ}}.
+The exact expression is based on \code{\link{corrH}}.
 }

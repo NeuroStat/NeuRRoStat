@@ -3,14 +3,31 @@
 #' This function takes the t test-statistic from a \strong{one-sample t-test}
 #' and calculates Hedges' g.
 #'
-#' @param t t test-statistic from a one-sample t-test
-#' @param N sample size.
+#' @param t T test-statistic from a one-sample t-test
+#' @param N Sample size.
+#' @param type Use the approximation for the unbiased estimator (default)
+#' or the exact expression.
 #'
-#' @seealso \code{\link{corrJ}} for the function of the correction factor J.
+#' @details
+#' The approximation is based on the correction factor \code{\link{corrJ}}.
+#' The exact expression is based on \code{\link{corrH}}.
 #'
-#' @return Hedges' g.
+#' @return Standardized mean effect size Hedges' g.
 #' @export
-hedgeG <- function(t,N){
-  G <- (t/sqrt(N))*corrJ(N)
+hedgeG <- function(t,N, type = c('approx', 'exact')){
+  # Check arguments
+  type <- match.arg(type)
+
+  # Approximation: using J
+  if(type == 'approx'){
+    G <- (t/sqrt(N))*corrJ(N)
+  }
+
+  # Exact expression: using h
+  if(type == 'exact'){
+    G <- (t/sqrt(N))*corrH(N)
+  }
+
+  # Return
   return(G)
 }

@@ -2,9 +2,11 @@
 
 export(GroupLevelOLS)
 export(SimPercBOLD)
+export(corrH)
 export(corrJ)
 export(hedgeG)
 export(plotKeyWord)
 export(tau)
 export(varHedge)
+export(varHedgeT)
 export(wMean)
