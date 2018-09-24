@@ -17,10 +17,10 @@
 #' @export
 overlapAct <- function(bin_map1, bin_map2){
   # Check if maps are only binarized
-  if(!all(bin_map1 %in% c(0,1))){
+  if(!all(bin_map1 %in% c(0,1,NA))){
     stop('Input should be binary maps only!')
   }
-  if(!all(bin_map2 %in% c(0,1))){
+  if(!all(bin_map2 %in% c(0,1,NA))){
     stop('Input should be binary maps only!')
   }
 
