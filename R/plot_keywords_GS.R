@@ -22,6 +22,9 @@ Or you have the following Python modules installed:
 # First locate a version of Python and throw error if no python is installed
 WherePy <- system('which python', intern = TRUE)
 if(!grepl(pattern = 'python', x = WherePy)){stop('Python needs to be installed')}
+    
+# Give warning that one needs Anaconda
+print('Please make sure you installed Anaconda first')
 
 # Create link to external script called extract_occurrences.py
 extractPY <- system.file("extscrpt", "extract_occurrences.py", package = "NeuRRoStat")
