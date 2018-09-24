@@ -33,9 +33,9 @@ overlapAct <- function(bin_map1, bin_map2){
   SumMap <- bin_map1 + bin_map2
 
   # Now calculate the number of intersecting voxels when summing
-  Vab <- sum(SumMap == 2)
-  Va <- sum(bin_map1 == 1)
-  Vb <- sum(bin_map2 == 1)
+  Vab <- sum(SumMap == 2, na.rm = TRUE)
+  Va <- sum(bin_map1 == 1, na.rm = TRUE)
+  Vb <- sum(bin_map2 == 1, na.rm = TRUE)
 
   # Now calculate overlap
   overlap <- Vab/(Va + Vb - Vab)
